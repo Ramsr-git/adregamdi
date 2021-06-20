@@ -66,6 +66,7 @@ public class UserController {
 			userService.getLoginUserDTO(tmpLoginUserDTO);
 			
 			if(loginUserDTO.isUserLogin() == true) {
+				System.out.println("로그인 : " + loginUserDTO.getUser_id());
 				return "user/login_success";
 			}else {
 				return "user/login_fail";

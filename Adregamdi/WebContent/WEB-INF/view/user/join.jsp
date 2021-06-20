@@ -27,7 +27,6 @@
 
 
 <script type="text/javascript">
-	/* 아이디 중복 검사 */
   function checkID(){
     const user_id = $("#user_id").val();
     
