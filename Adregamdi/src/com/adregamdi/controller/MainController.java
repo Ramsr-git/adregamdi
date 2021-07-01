@@ -22,7 +22,7 @@ public class MainController {
 	@Autowired
 	private WeatherAPI weatherAPI;
 	
-	@RequestMapping(value="/", method=RequestMethod.GET)
+	@RequestMapping(value="/", method= {RequestMethod.GET , RequestMethod.POST})
 	public  String main(Model model) throws IOException, ParseException {
 		
 		WeatherDTO jeju = weatherAPI.getWeatherJeju();
